@@ -80,14 +80,15 @@ main{
     font-size: 64px;
     font-weight: 200;
     margin-bottom:0;
+    font-family: 'Forum';
+    margin-top:10px;
 
 }
 .first-side{
     display: flex;
     flex-direction: row;
     width: 100dvw;
-    height: 86.4dvh;
-    max-height: 848px;
+    height: 87%;
 }
 .introducing{
     font-family: 'Schoolbell';
@@ -114,7 +115,7 @@ main{
     box-shadow: 1px 1px 2px gainsboro;
     text-align: center;
     border-radius: 50px;
-    background-color: #AEBADA;
+    background-color: #AEBADA !important;
     font-family: sans-serif;
     text-shadow: 0px -1px 0px;
 }
@@ -150,7 +151,7 @@ main{
 }
 #reporterFromCaras{
     right: 31vw;
-    top: 20vh;
+    top: 19vh;
 }
 #interviewer{
     right: 33vw;
@@ -168,9 +169,9 @@ main{
     width: 58px;
     position: absolute;
     right: 40vw;
-    top: 477px;
+    top: 440px;
     transform-origin: center;
-    transform: rotate(13deg);
+    transform: rotate(73deg);
 }
 #ball{
     height: 38px;
@@ -231,6 +232,11 @@ main{
    
     #interviewer{
         right: 31vw;
+        top:40vh;
+    }
+    #vetor{
+        top:40vh;
+        right:55vw;
     }
     #reporterFromCaras{
         right: 33vw;
@@ -242,15 +248,15 @@ main{
         font-size: 25px;
     }
     #interviewer{
-        right: 31vw;
-        top:35vh;
+        right: 33vw;
+        top:39vh;
     }
     #reporterFromCaras{
         top: 22vh;
-        right: 31vw;
+        right: 33vw;
     }
     #vetor{
-        top:28vh;
+        top:39vh;
     }
     .list-work p{
         font-size:0.8rem;
