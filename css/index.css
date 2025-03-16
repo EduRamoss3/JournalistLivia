@@ -69,6 +69,7 @@ main{
 }
 .title{
     font-size: 64px;
+    font-weight: 200;
 }
 .first-side{
     display: flex;
