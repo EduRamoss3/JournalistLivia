@@ -430,6 +430,7 @@ main{
     background-size: cover;
     padding:10px;
     border-radius:34px;
+    width: 75%;
   }
   .btn-contact a{
     font-size:13px;
