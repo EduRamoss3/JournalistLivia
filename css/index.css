@@ -64,8 +64,8 @@ main{
     padding-bottom: 0  !important;
 }
 .videohide{
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
 }
 .items-nav .link {
     display: flex;
@@ -434,7 +434,7 @@ main{
     background-size: cover;
     padding:10px;
     border-radius:34px;
-    width: 75%;
+    width: 75% !important;
   }
   .btn-contact a{
     font-size:13px;
