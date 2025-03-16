@@ -13,12 +13,18 @@
     src: url(../fonts/Inter.ttf);
     
 }
+.navbar{
+    display: flex;
+    justify-content: center;
+}
 body{
     font-family: 'Forum';
     overflow-x: hidden;
     background-color: #F0F2FB;
     width: 100vw;
     height: 100vh;
+    margin:0;
+    padding: 0;
 }
 main{
     width: 100vw;
@@ -47,8 +53,11 @@ main{
 .content{
     width: 90%;
     height: 350px;
-    padding: 20px;
-    margin-top:4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 0  !important;
 }
 .items-nav .link {
     display: flex;
@@ -70,6 +79,8 @@ main{
 .title{
     font-size: 64px;
     font-weight: 200;
+    margin-bottom:0;
+
 }
 .first-side{
     display: flex;
@@ -82,6 +93,8 @@ main{
     font-family: 'Schoolbell';
     font-weight: 600;
     font-size: 20px;
+    text-align: center;
+    margin-bottom:0;
 }
 .section-about{
     display: flex;
@@ -93,6 +106,7 @@ main{
     font-size: 45px;
     font-weight: bold;
     font-family: 'Inter';
+    margin-top:10px;
 }
 .btn-contact{
     width: 201px;
@@ -214,9 +228,7 @@ main{
     }
 }
 @media(max-width:1530px){
-    .content{
-        margin-left: -100px;
-    }
+   
     #interviewer{
         right: 31vw;
     }
@@ -225,9 +237,7 @@ main{
     }
 }
 @media(max-width:1378px){
-    .content{
-        margin-left: -100px;
-    }
+    
     #interviewer,  #reporterFromCaras{
         font-size: 25px;
     }
@@ -388,13 +398,7 @@ main{
     background-size: cover;
     
   }
-  .content{
-    display: flex;
-    justify-content: center;
-     align-items: center;
-     flex-direction: column;
-     padding-bottom: 0  !important;
-  }
+  
 }
 /*line*/ 
 .line{
