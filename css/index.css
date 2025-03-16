@@ -337,9 +337,7 @@ main{
         transform:rotate(120deg);
     }
     #vetorHideVideo2{
-        top:14.2vh;
-        transform: rotate(103deg);
-        right:5vw;
+        display: none !important;
     }
     .section-video{
         display: flex;
