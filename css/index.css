@@ -63,6 +63,10 @@ main{
     flex-direction: column;
     padding-bottom: 0  !important;
 }
+.videohide{
+    display: flex;
+    justify-content: center;
+}
 .items-nav .link {
     display: flex;
     align-items: center;
