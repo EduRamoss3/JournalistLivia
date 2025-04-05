@@ -100,7 +100,7 @@ main{
     display: flex;
     flex-direction: row;
     width: 100dvw;
-    height: 87%;
+    height: 100%;
 }
 .introducing{
     font-family: 'Schoolbell';
@@ -113,7 +113,6 @@ main{
     display: flex;
     flex-direction: column;
     width: 70%;
-    height: 100%;
 }
 .text-about{
     font-size: 45px;
@@ -143,10 +142,10 @@ main{
 /*RIGHT*/
 .section-video{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    height: auto;
     width: 30.0%;
-    height: 100%;
 }
 .video-reso{
     display: block;
@@ -185,6 +184,7 @@ main{
     top: 440px;
     transform-origin: center;
     transform: rotate(73deg);
+    display: none;
 }
 #ball{
     height: 38px;
@@ -248,8 +248,8 @@ main{
         top:40vh;
     }
     #vetor{
-        top:40vh;
-        right:55vw;
+        top:45vh;
+        right:49vw;
     }
     #reporterFromCaras{
         right: 33vw;
@@ -258,21 +258,25 @@ main{
 @media(max-width:1378px){
     
     #interviewer,  #reporterFromCaras{
-        font-size: 25px;
+        font-size: 20px;
     }
     #interviewer{
-        right: 33vw;
-        top:39vh;
+        right: 35vw;
+        top:45vh;
     }
     #reporterFromCaras{
-        top: 22vh;
-        right: 33vw;
+        top: 24vh;
+        right: 35vw;
     }
     #vetor{
-        top:39vh;
+        top:35vh;
+    }
+    #vetor2{
+        top:43vh;
+        transform: rotate(70deg);
     }
     .list-work p{
-        font-size:0.8rem;
+        font-size:0.7rem;
     }
     .container-works{
         justify-content: flex-start;
@@ -509,10 +513,30 @@ main{
     justify-content: space-evenly;
     flex-direction: row;
     width: 100dvw;
-    height: 460px;
+    height: 373px;
     padding-left:20px;
     padding-right:20px;
 }
+.content-line-2{
+    display:flex;
+    flex-direction: column;
+    width: 100dvw;
+    height: 746px;
+    padding-left:20px;
+    padding-right:20px;
+}
+.line-third{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    margin-bottom: 30px;
+}
+.line-third .card-side{
+    margin-right:50px;
+}
+
 #card1{
     background-image: url("/imgs/thumb1.png");
     background-size: cover;
@@ -540,7 +564,9 @@ main{
 .card-side{
     padding-right: 10px;
     height:100%;
+    position: relative;
 }
+
 .card-side img , .card-side{
     border-radius:10px;
   
@@ -561,31 +587,43 @@ main{
 .down-text{
     font-weight: 500;
     font-family: 'Inter';
+    text-align: center;
+
+}
+.img-pro{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#imgProDown{
+    background-size: auto;
+    width:100%;
 }
 #carouselSlider{
     display: none;
 }
 .container-insta{
     padding:10px;
-    margin:10px;
     width:50px;
     background-color:white;
     height:40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius:20px
+    border-radius:20px;
+    position: absolute;
+    top:10px;
+    left: 10px;
 }
 .container-text{
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 111%;
     justify-content: center;
     align-items: flex-end;
     color:rgb(37, 37, 37);
-    margin-top:-10px;
     font-weight: 200;
-    font-size:1.rem;
+    font-size:1rem;
 }
 /*carousel*/
 .carousel-item{
@@ -622,9 +660,50 @@ main{
     background-size:auto;
     width: fit-content;
 }
+/*thirdside*/
+.third-side{
+    position: relative;
+    width:100dvw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+}
+.container-third{
+    width: 90%;
+    padding-top:20px;
+}
+.text-third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.text-third h4{
+    font-family: 'Schoolbell';
+    color: #AEBADA;
+    font-size: 30px;
+}
+.text-sm-center{
+    font-family: 'PT Mono';
+    font-size: .8rem;
+}
+#vetorThird{
+ position: absolute;
+ width: 50px;
+ left: 20vh;
+ top: 20vh;
+}
+
 /*mobile*/
 @media(max-width:1187px){
     .content-line{
+        display: none;
+    }
+    .content-line-2{
         display: none;
     }
     #carouselSlider{
@@ -642,10 +721,6 @@ main{
         white-space: nowrap;
         padding-bottom: 5px;
     }
-    .btn-contact a{
-        font-size: 11px;
-        font-family: 'Inter';
-    }
 
     #ball{
         width:30px;
@@ -656,11 +731,41 @@ main{
         margin-top:-50px;
         font-size: .8rem;
     }
+    .img-pro{
+        margin-top:10px;
+
+    }
 
   
 }
+@media (max-width:800px){
+    .text-about{
+        font-size:18px !important;
+    }
+    .title{
+        font-size:40px !important;
+    }
+}
+/*notebook*/
+@media(max-width:1370px){
+    .text-about{
+        font-size:30px;
+    }
+    .title-works{
+        font-size:18px;
+    }
+    .title{
+        font-size:50px;
+    }
+}
 @media(min-width:1187px){
     .card-side{
-        width: 13%;
+        width: 16%;
+    }
+    #imgProDown{
+        width:60%;
+    }
+    .text-third h4{
+        font-size:2rem;
     }
 }
