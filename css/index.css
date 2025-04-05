@@ -538,27 +538,27 @@ main{
 }
 
 #card1{
-    background-image: url("/imgs/thumb1.png");
+    background-image: url("./imgs/thumb1.png");
     background-size: cover;
 }
 #card2{
-    background-image: url("/imgs/thumb2.png");
+    background-image: url("./imgs/thumb2.png");
     background-size: cover;
 }
 #card3{
-    background-image: url("/imgs/thumb3.png");
+    background-image: url("./imgs/thumb3.png");
     background-size: cover;
 }
 #card4{
-    background-image: url("/imgs/thumb4.png");
+    background-image: url("./imgs/thumb4.png");
     background-size: cover;
 }
 #card5{
-    background-image: url("/imgs/thumb5.png");
+    background-image: url("./imgs/thumb5.png");
     background-size: cover;
 }
 #card6{
-    background-image: url("/imgs/thumb6.png");
+    background-image: url("./imgs/thumb6.png");
     background-size: cover;
 }
 .card-side{
