@@ -13,6 +13,10 @@
     src: url(../fonts/Inter.ttf);
     
 }
+@font-face{
+    font-family: 'PT Mono';
+    src: url(../fonts/PTMono-Regular.ttf);
+}
 #vetorHideVideo, #vetorHideVideo2, #vetorHideVideo3
 {
     display: none;
@@ -535,7 +539,6 @@ main{
 }
 .card-side{
     padding-right: 10px;
-    width:16%;
     height:100%;
 }
 .card-side img , .card-side{
@@ -551,6 +554,16 @@ main{
 .instagram:hover{
      transform: scale(1.1);
      transition: ease-in .2s;
+}
+.content-line{
+    display: flex;
+}
+.down-text{
+    font-weight: 500;
+    font-family: 'Inter';
+}
+#carouselSlider{
+    display: none;
 }
 .container-insta{
     padding:10px;
@@ -572,33 +585,82 @@ main{
     color:rgb(37, 37, 37);
     margin-top:-10px;
     font-weight: 200;
-    font-size:1.1rem;
+    font-size:1.rem;
 }
-@media(max-width:1000px){
+/*carousel*/
+.carousel-item{
+    height: 100%;
+}
+.carousel-inner{
+    height: 100%;
+}
+#carouselSlider{
+    height: 700px;
+}
+#vetorCarousel{
+    display: none;
+}
+#vetorCarousel2{
+    display:none;
+}
+/*downcontainer*/
+.down-container{
+    display: flex;
+    font-family: 'PT Mono';
+    font-weight: 200;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+    white-space: break-spaces;
+    width:100%;
+    height: 300px;
+}
+.color-roxo{
+    background-image: url(../imgs/Vector.png);
+    background-repeat: no-repeat;
+    background-size:auto;
+    width: fit-content;
+}
+/*mobile*/
+@media(max-width:1187px){
     .content-line{
-        flex-direction: column;
-        transform: scale(01.1rem);
-        transition: cubic-bezier(0.165, 0.84, 0.44, 1);
-        height: fit-content;
-        justify-content: space-evenly;
-        align-items: center;
+        display: none;
     }
-    .card-side{
-        width: 80% !important;
-        height: 560px;
-    }
-    .card-side{
-        margin-top: 68px;
-    }
-    .card-side:first-child{
-        margin-top: 0;
-    }
-    .text-about-side2{
-        font-size: 18px;
-        white-space: nowrap;
+    #carouselSlider{
+        display: flex;
     }
     .container-side2{
-        padding: 0;
+        padding: 0px 0px 0px 0px;
+        flex-direction: column;
+    }
+    .card-side{
+        height: 78%;
+    }
+    .text-about-side2{
+        font-size: 1rem;
+        white-space: nowrap;
+        padding-bottom: 5px;
+    }
+    .btn-contact a{
+        font-size: 11px;
+        font-family: 'Inter';
     }
 
+    #ball{
+        width:30px;
+        height: 25px;
+    }
+    .down-container{
+        height: 100px;
+        margin-top:-50px;
+        font-size: .8rem;
+    }
+
+  
+}
+@media(min-width:1187px){
+    .card-side{
+        width: 13%;
+    }
 }
