@@ -325,7 +325,9 @@ main{
     }
 }
 .hide{
-    display: none;
+    position: absolute;
+    left:-9999px;
+    opacity: 0;
 }
 /*/column/*/
 @media(max-width:1074px){
@@ -356,10 +358,15 @@ main{
         
     }
     .hide-web{
-        display: none;
+       position: absolute;
+       left: -9999px;
+       opacity: 0;
     }
     .hide{
         display: block;
+        position: relative;
+        left:0;
+        opacity: 1;
     }
     .title{
         font-size: 2.3rem;
@@ -453,16 +460,28 @@ main{
   
 }
 /*line*/ 
-.line{
-    height: 56px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.marquee-container {
+    overflow: hidden;
+    width: 100%;
     background-color:#AEBADA;
-    box-shadow: 6px 7px 20px #9a9a9a;
-    
-
-}
+ 
+  }
+  
+  .marquee-content {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: scroll-left 12s linear infinite;
+    will-change: transform;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 .textline{
     font-family: 'Inter';
     font-weight: bolder;
@@ -472,18 +491,7 @@ main{
     padding-top: 10px;
     white-space: nowrap;
 }
-.marq{
-    display: flex;
-    animation: marquee 12s linear infinite;
-}
-@keyframes marquee {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
+
 
 /*/SECOND SIDE */
 .second-side{
@@ -599,9 +607,10 @@ main{
     background-size: auto;
     width:100%;
 }
-#carouselSlider{
+#carouselSlider ,#carouselSlider2{
     display: none;
 }
+
 .container-insta{
     padding:10px;
     width:50px;
@@ -632,7 +641,7 @@ main{
 .carousel-inner{
     height: 100%;
 }
-#carouselSlider{
+#carouselSlider, #carouselSlider2{
     height: 700px;
 }
 #vetorCarousel{
@@ -701,12 +710,13 @@ main{
 /*mobile*/
 @media(max-width:1187px){
     .content-line{
-        display: none;
+        position: absolute;
+        left: -9999px;
     }
     .content-line-2{
         display: none;
     }
-    #carouselSlider{
+    #carouselSlider, #carouselSlider2{
         display: flex;
     }
     .container-side2{
@@ -769,3 +779,17 @@ main{
         font-size:2rem;
     }
 }
+.carousel {
+    overflow-anchor: none;
+  }
+  
+  .carousel-item {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Para Safari */
+  }
+  
+  /* Desativa smooth scroll que pode interferir */
+  html {
+    scroll-behavior: auto !important;
+  }
