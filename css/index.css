@@ -70,7 +70,9 @@ main{
 .videohide{
     display: flex !important;
     justify-content: center !important;
+    position: relative;
 }
+
 .items-nav .link {
     display: flex;
     align-items: center;
@@ -151,10 +153,13 @@ main{
     display: block;
     width: auto;
     height: 100%;
+    border-radius:10px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 2px gainsboro;
 
 }
 
-#reporterFromCaras, #interviewer{
+#reporterFromCaras, #interviewer, #reporterFromCaras2, #interviewer2{
     font-family: 'Schoolbell';
     color: #AEBADA;
     font-size: 30px;
@@ -461,6 +466,8 @@ main{
 }
 /*line*/ 
 .marquee-container {
+    display: flex;
+    align-items: center;
     overflow: hidden;
     width: 100%;
     background-color:#AEBADA;
@@ -469,8 +476,9 @@ main{
   
   .marquee-content {
     display: inline-flex;
+    align-items: center;
     white-space: nowrap;
-    animation: scroll-left 12s linear infinite;
+    animation: scroll-left 29s linear infinite;
     will-change: transform;
   }
   
@@ -484,18 +492,21 @@ main{
   }
 .textline{
     font-family: 'Inter';
-    font-weight: bolder;
+    letter-spacing: 1px;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    font-size: 12px;
-    padding-top: 10px;
+    font-size: .7rem;
     white-space: nowrap;
+    margin:0;
 }
 
 
 /*/SECOND SIDE */
 .second-side{
     display: flex;
+    padding-bottom: 10px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #F0F2FB;
@@ -663,6 +674,32 @@ main{
     width:100%;
     height: 300px;
 }
+.down-container-bio{
+    display: flex;
+        font-family: 'PT Mono';
+        font-weight: 200;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        white-space: break-spaces;
+        width: 100%;
+        margin-top:30px;
+        padding-top:20px;
+        position: relative;
+}
+.down-container-bio h4{
+    position: relative;
+}
+.text-down-container{
+    position: relative;
+}
+#vetorBio{
+    position: absolute;
+    right:-20px;
+    top:-20px;
+    width: 50px;
+}
 .color-roxo{
     background-image: url(../imgs/Vector.png);
     background-repeat: no-repeat;
@@ -692,7 +729,7 @@ main{
     width: 100%;
     position: relative;
 }
-.text-third h4, .title-school{
+.text-third h4, .title-school,.down-container-bio h4{
     font-family: 'Schoolbell';
     color: #AEBADA;
     font-size: 30px;
@@ -769,11 +806,33 @@ main{
     right:-40%;
     transform: rotate(10deg);
 }
+#reporterFromCaras2, #interviewer2{
+    display: none;
+}
 /*mobile*/
 @media(max-width:1187px){
+    #reporterFromCaras2, #interviewer2{
+        display: block;
+        font-size:.9rem;
+        white-space: nowrap;
+    }
+    #reporterFromCaras2{
+        bottom:-3.5vh;
+        right:30px;
+    }
+    #interviewer2{
+        top:-10px;
+    }
     .content-line{
         position: absolute;
         left: -9999px;
+    }
+    .down-container-bio{
+        font-size: .8rem;
+    }
+    #vetorBio{
+        width:50px;
+        
     }
     .content-line-2{
         display: none;
@@ -865,7 +924,7 @@ main{
     #imgProDown{
         width:60%;
     }
-    .text-third h4{
+    .text-third h4, .down-container-bio h4{
         font-size:2rem;
     }
 }
