@@ -509,7 +509,8 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #F0F2FB;
+    background-image: url("../imgs/test.jpg");
+    background-size: cover;
     width: 100%;
 }
 .container-side2{
@@ -699,9 +700,15 @@ main{
     right:-20px;
     top:-20px;
     width: 50px;
+    filter: brightness(1.5);
+
+}
+.text-about-side2{
+    filter: brightness(1.5);
 }
 .color-roxo{
     background-image: url(../imgs/Vector.png);
+    filter: brightness(1.5);
     background-repeat: no-repeat;
     background-size:auto;
     width: fit-content;
