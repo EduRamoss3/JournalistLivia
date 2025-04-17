@@ -155,7 +155,6 @@ main{
     height: 100%;
     border-radius:10px;
     box-sizing: border-box;
-    box-shadow: 1px 1px 2px gainsboro;
 
 }
 
@@ -843,12 +842,12 @@ main{
 .line-image{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
     padding-top:5px;
+    width:100dvw;
 }
 .pic-sm{
-    width: fit-content;
+    width: 500px;
     height: auto;
 }
 .pic-sm img:hover{
@@ -858,11 +857,11 @@ main{
 .img-sm{
     background-size: cover;
     background-repeat: no-repeat;
-    width: 95%;
     height: 100%;
-    max-width: 260px;
-    max-height: 260px;
+    max-width: 460px;
+    max-height: 469px;
     border-radius:10px;
+    margin:5px;
 }
 /*footer*/
 .footer{
@@ -908,11 +907,94 @@ main{
     font-size:.6rem;
     color:gainsboro;
 }
+#containerMob{
+    display:none;
+    position: relative;
+}
+#containerDesk{
+display: block;
+}
+#containerMob {
+    padding: 50px 0;
+  }
+
+  .line-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .line-mobile {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .pic-sm-mobile {
+    width: 170px;
+    height: 275px;
+    flex-shrink: 0;
+  }
+
+  .img-sm-mobile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.pic-sm-mobile {
+    width: 170px;
+    height: 275px;
+    background-size: cover;
+    flex-shrink: 0;
+}
+
+.img-sm-mobile {
+    width: 97.5%;
+    border-radius:10px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 /*mobile*/
 @media(max-width:1187px){
     .items-nav{
         width: 100%;
+    }
+    .footer-li{
+        font-size: .6rem;
+    }
+    .line-wrapper{
+        height: 275px;
+    }
+    .container-footer{
+        padding:0;
+        white-space: nowrap;
+    }
+    .container-footer ul{
+        padding:0;
+        padding-bottom:30px;
+        margin:0;
+        display:flex;
+        font-size:.7rem;
+        justify-content: center;
+        flex-direction: column;
+        align-items: start;
+    }
+    .footer{
+        padding-top:30px;
+    }
+    #foot{
+        white-space:nowrap;
+        font-size:1.2rem !important; 
+    }
+    #containerDesk{
+        display: none;
+    }
+    #containerMob{
+        display: block;
     }
     #reporterFromCaras2, #interviewer2{
         display: block;
@@ -995,10 +1077,6 @@ main{
         margin-top: 0;
         padding-top:0;
     }
-    
-
-
-  
 }
 @media (max-width:800px){
     .text-about{
