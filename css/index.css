@@ -89,6 +89,10 @@ main{
     font-weight: 600 !important;
     letter-spacing: 1px; 
     color:rgb(59, 59, 59) !important;
+    transition: ease-in .2s;
+}
+.link:hover{
+    transform: scale(1.1);
 }
 .title{
     font-size: 64px;
@@ -1074,9 +1078,14 @@ display: block;
         padding:5px;
     }
     .fourth-side{
-        margin-top: 0;
+        margin: 0px;
         padding-top:0;
     }
+    .link{
+        font-size:0.6rem !important;
+    }
+
+
 }
 @media (max-width:800px){
     .text-about{
