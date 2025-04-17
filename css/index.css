@@ -184,7 +184,7 @@ main{
     height: 40px;
     position: absolute;
     left:-40px;
-    top:-7vh;
+    top:-5vh;
 
     transform: rotate(290deg);
 }
@@ -256,6 +256,7 @@ main{
     #interviewer{
         right: 31vw;
         top:47vh;
+        font-size: 1.5rem;
     }
     #vetor{
         left: -38px;
@@ -264,6 +265,7 @@ main{
     #reporterFromCaras{
         right: 33vw;
         top:21vh;
+        font-size: 1.5rem;
     }
 }
 @media(max-width:1378px){
