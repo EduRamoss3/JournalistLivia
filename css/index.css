@@ -583,6 +583,12 @@ main{
     padding-right: 10px;
     height:100%;
     position: relative;
+    transition: ease-in .2s;
+}
+.card-side:hover, .pic-sm img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 1px 1px 2px 5px gainsboro;
 }
 
 .card-side img , .card-side{
@@ -637,7 +643,7 @@ main{
 .container-text{
     display: flex;
     width: 100%;
-    height: 108%;
+    height: 109%;
     justify-content: center;
     align-items: flex-end;
     color:rgb(37, 37, 37);
@@ -749,7 +755,14 @@ main{
  left: 20vh;
  top: 20vh;
 }
+#vetorFive{
+    position: absolute;
+    width:90px;
+    transform:rotate(109deg);
+    right:20vh;
+}
 .fourth-side{
+    border-radius:20px;
     width:100dvw;
     margin-top:50px;
     padding-bottom: 50px;
@@ -814,6 +827,88 @@ main{
 #reporterFromCaras2, #interviewer2{
     display: none;
 }
+/*container-five*/
+.five-side{
+    width:100dvw;
+    height: fit-content;
+}
+.container-five{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top:5px;
+    width:100%;
+    height:fit-content;
+}
+.line-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top:5px;
+}
+.pic-sm{
+    width: fit-content;
+    height: auto;
+}
+.pic-sm img:hover{
+    transition: ease-in .2s;
+}
+
+.img-sm{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 95%;
+    height: 100%;
+    max-width: 260px;
+    max-height: 260px;
+    border-radius:10px;
+}
+/*footer*/
+.footer{
+    width: 100dvw;
+    background-color: #121212;
+    color:white;
+}
+.container-footer{
+    width:100%;
+    padding:50px;
+    height: 75%; 
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container-footer ul li{
+    font-family: 'Inter';
+    text-decoration: none;
+    list-style: none;
+    font-weight: lighter;
+
+}
+.line-footer{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    border-top:0.1px solid gainsboro;
+}
+.footer-li{
+    color:gainsboro;
+    font-size:.8rem;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+.footer-li:hover{
+ transform: scale(1.1);
+}
+
+.information{
+    font-family: 'Inter';
+    font-weight: 100;
+    font-size:.6rem;
+    color:gainsboro;
+}
+
 /*mobile*/
 @media(max-width:1187px){
     .items-nav{
