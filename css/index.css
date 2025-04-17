@@ -171,18 +171,21 @@ main{
 }
 #reporterFromCaras{
     right: 31vw;
-    top: 19vh;
+    top: 21vh;
 }
 #interviewer{
+    display:flex;
+    flex-direction: row;
     right: 33vw;
-    top: 32vh;
+    top: 40vh;
 }
 #vetor{
     width: 40px;
     height: 40px;
     position: absolute;
-    right: 46vw;
-    top: 25vh;
+    left:-40px;
+    top:-7vh;
+
     transform: rotate(290deg);
 }
 #vetor3{
@@ -206,9 +209,8 @@ main{
     font-family: sans-serif;
 }
 #vetor2{
-  width: 40px;  
-  position: absolute;
-  top:435px;
+  width: 40px; 
+  height: 40px; 
 }
 .container-works{
     width: 100%;
@@ -253,14 +255,15 @@ main{
    
     #interviewer{
         right: 31vw;
-        top:40vh;
+        top:47vh;
     }
     #vetor{
-        top:45vh;
-        right:49vw;
+        left: -38px;
+        top: -4vh;
     }
     #reporterFromCaras{
         right: 33vw;
+        top:21vh;
     }
 }
 @media(max-width:1378px){
@@ -277,10 +280,9 @@ main{
         right: 35vw;
     }
     #vetor{
-        top:35vh;
+       
     }
     #vetor2{
-        top:43vh;
         transform: rotate(70deg);
     }
     .list-work p{
@@ -321,8 +323,7 @@ main{
         right: 31vw;
     }
     #vetor{
-        top:35vh;
-        right:45vw;
+
     }
     #interviewer{
         top:43vh;
@@ -911,68 +912,23 @@ main{
     font-size:.6rem;
     color:gainsboro;
 }
-#containerMob{
-    display:none;
-    position: relative;
-}
-#containerDesk{
-display: block;
-}
-#containerMob {
-    padding: 50px 0;
-  }
-
-  .line-wrapper {
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-    margin-bottom: 20px;
-  }
-
-  .line-mobile {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .pic-sm-mobile {
-    width: 170px;
-    height: 275px;
-    flex-shrink: 0;
-  }
-
-  .img-sm-mobile {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-.pic-sm-mobile {
-    width: 170px;
-    height: 275px;
-    background-size: cover;
-    flex-shrink: 0;
+.random{
+    display:flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
 }
 
-.img-sm-mobile {
-    width: 97.5%;
-    border-radius:10px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
 /*mobile*/
-@media(max-width:1187px){
+@media(max-width:1075px){
     .items-nav{
         width: 100%;
     }
     .footer-li{
         font-size: .6rem;
     }
-    .line-wrapper{
-        height: 275px;
-    }
+   
     .container-footer{
         padding:0;
         white-space: nowrap;
