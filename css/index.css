@@ -152,6 +152,7 @@ main{
     align-items: center;
     height: auto;
     width: 30.0%;
+    margin-right:3px;
 }
 .video-reso{
     display: block;
@@ -873,8 +874,8 @@ main{
 /*footer*/
 .footer{
     width: 100dvw;
-    background-color: #121212;
-    color:white;
+    background-color: white;
+    color:#212529;
 }
 .container-footer{
     width:100%;
@@ -885,7 +886,7 @@ main{
     align-items: center;
 }
 .container-footer ul li{
-    font-family: 'Inter';
+    font-family: 'PT Mono';
     text-decoration: none;
     list-style: none;
     font-weight: lighter;
@@ -896,10 +897,10 @@ main{
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-    border-top:0.1px solid gainsboro;
+    border-top:0.1px solid lightgray;
 }
 .footer-li{
-    color:gainsboro;
+    color:#212529;
     font-size:.8rem;
     cursor: pointer;
     transition: .2s ease-in;
@@ -912,7 +913,7 @@ main{
     font-family: 'Inter';
     font-weight: 100;
     font-size:.6rem;
-    color:gainsboro;
+    color:gray;
 }
 .random{
     display:flex;
