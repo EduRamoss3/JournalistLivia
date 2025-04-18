@@ -127,20 +127,27 @@ main{
     margin-top:10px;
 }
 .btn-contact{
-    width: 151px;
-    height: 56px;
+    display: flex;
+    align-items: center;;
+    width: 131px;
+    height: 36px;
     box-shadow: 1px 1px 2px gainsboro;
     text-align: center;
     border-radius: 50px;
     background-color: #AEBADA !important;
-    font-family: sans-serif;
+    font-family: 'Inter' !important;
     text-shadow: 0px -1px 0px;
+}
+.btn-contact a{
+    font-size: .7rem;
+    font-family: 'Inter' !important;
 }
 .btn-container{
     display: flex;
     align-items: center;
     width: 100%;
     height: 100px;
+    padding-bottom: 20px;
 }
 .btn:hover{
     background-color: #5977a5 !important;
