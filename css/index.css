@@ -127,20 +127,18 @@ main{
     margin-top:10px;
 }
 .btn-contact{
-    display: flex;
-    align-items: center;;
     width: 131px;
-    height: 36px;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
     box-shadow: 1px 1px 2px gainsboro;
-    text-align: center;
     border-radius: 50px;
     background-color: #AEBADA !important;
-    font-family: 'Inter' !important;
-    text-shadow: 0px -1px 0px;
+    font-family: 'Inter';
 }
 .btn-contact a{
     font-size: .7rem;
     font-family: 'Inter' !important;
+    font-weight: 100;
 }
 .btn-container{
     display: flex;
@@ -239,11 +237,17 @@ main{
     border-bottom: 1px solid gray;
     letter-spacing: 0.4px;
 }
-
+.list-work a{
+    color: inherit;
+    text-decoration-color: rgb(58, 57, 57);
+}
 .img-li{
-    width: 60px;
-    margin-right: 35px;
-    
+    height: 77px;
+    max-height: 100px;
+    margin-right: 15px;
+    border-radius:10px;
+    box-sizing: border-box;
+    box-shadow: 1px 3px 2px gainsboro;
 }
 
 /*SECOND-SIDE*/
@@ -365,7 +369,7 @@ main{
         display: block;
         position: absolute;
         top:15vh;
-        right:3vw;
+        right:-2vw;
         width: 50px;
         transform:rotate(120deg);
     }
@@ -416,7 +420,7 @@ main{
     display:none;
   }
   .textline{
-    font-size:.6rem  !important;
+    font-size:.8rem  !important;
   }
   .marq img{
     width: 35px;
@@ -470,19 +474,23 @@ main{
   }
   .btn-contact a{
     font-size:13px;
+    font-weight: lighter;
   }
   .btn-container{
     justify-content: center;
+    align-items: flex-end;
   }
   
 }
 /*line*/ 
+
 .marquee-container {
     display: flex;
     align-items: center;
     overflow: hidden;
     width: 100%;
     background-color:#AEBADA;
+    height:40px;
  
   }
   
@@ -505,7 +513,7 @@ main{
 .textline{
     font-family: 'Inter';
     letter-spacing: 1px;
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
     text-transform: uppercase;
     font-size: .8rem;
@@ -654,6 +662,12 @@ main{
     top:10px;
     left: 10px;
 }
+.col{
+    background-size:auto;
+    width: 100%;
+    height: 100%;
+}
+
 .container-text{
     display: flex;
     width: 100%;
@@ -706,12 +720,17 @@ main{
         margin-top:30px;
         padding-top:20px;
         position: relative;
+        padding: 20px;
 }
 .down-container-bio h4{
     position: relative;
 }
 .text-down-container{
     position: relative;
+    text-align: justify;
+}
+.text-down-container p{
+    text-indent: 20px;
 }
 #vetorBio{
     position: absolute;
@@ -865,6 +884,7 @@ main{
     width: 500px;
     height: auto;
 }
+
 .pic-sm img:hover{
     transition: ease-in .2s;
 }
@@ -921,6 +941,8 @@ main{
     font-weight: 100;
     font-size:.6rem;
     color:gray;
+
+
 }
 .random{
     display:flex;
