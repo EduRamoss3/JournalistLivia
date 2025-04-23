@@ -25,17 +25,15 @@
     display: flex;
     justify-content: center;
 }
-body{
+
+body {
     font-family: 'Forum';
     overflow-x: hidden;
     background-color: #F0F2FB;
-    width: 100vw;
-    height: 100vh;
-    margin:0;
-    padding: 0;
+    width: 100%;
+    min-height: 100vh;
 }
 main{
-    width: 100vw;
     height: 100vh;
 }
 
@@ -530,12 +528,16 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+
     width: 100%;
 }
 .container-side2{
     width:90%;
     height: 100%;
     padding:90px 60px 40px 60px;
+    
     font-weight: 900;
 }
 .text-about-side2{
@@ -826,6 +828,8 @@ main{
     font-weight: 200;
 }
 .list-content{
+  display: flex;
+  justify-content: space-evenly;
   height: max-content;
   margin-top:-10px;
   padding:0;
@@ -839,7 +843,8 @@ main{
     text-align:center;
     align-items: center;
     white-space: break-spaces;
-    width:100%;
+    width:fit-content;
+    padding:25px;
 }
 #LiviaImg{
     width:280px;
@@ -853,7 +858,6 @@ main{
 }
 .img-inli{
     width: 32px;
-    margin-right: 9px;
 }
 #vetor5{
     position: absolute;
