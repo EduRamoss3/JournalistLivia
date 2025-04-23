@@ -583,23 +583,43 @@ main{
     background-size: cover;
 }
 #card2{
-    background-image: url("../imgs/thumb2.png");
+    background-image: url("../imgs/lolla.png");
     background-size: cover;
 }
 #card3{
-    background-image: url("../imgs/thumb3.png");
+    background-image: url("../imgs/vila.png");
     background-size: cover;
 }
 #card4{
-    background-image: url("../imgs/thumb4.png");
+    background-image: url("../imgs/thumb1.png");
     background-size: cover;
 }
 #card5{
-    background-image: url("../imgs/thumb5.png");
+    background-image: url("../imgs/friends.png");
     background-size: cover;
 }
 #card6{
+    background-image: url("../imgs/thumb4.png");
+    background-size: cover;
+}
+#card7{
     background-image: url("../imgs/thumb6.png");
+    background-size: cover;
+}
+#card8{
+    background-image: url("../imgs/thumb8.png");
+    background-size: cover;
+}
+#card9{
+    background-image: url("../imgs/thumb10.png");
+    background-size: cover;
+}
+#card10{
+    background-image: url("../imgs/princesa.png");
+    background-size: cover;
+}
+#card11{
+    background-image: url("../imgs/thumb4.png");
     background-size: cover;
 }
 .card-side{
@@ -607,11 +627,6 @@ main{
     height:100%;
     position: relative;
     transition: ease-in .2s;
-}
-.card-side:hover, .pic-sm img:hover{
-    transform: scale(1.05);
-    cursor: pointer;
-    box-shadow: 1px 1px 2px 5px gainsboro;
 }
 
 .card-side img , .card-side{
