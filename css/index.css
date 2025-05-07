@@ -566,6 +566,7 @@ main{
     width:100%;
     height:100%;
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 .line-third .card-side{
     margin-right:50px;
@@ -609,6 +610,36 @@ main{
     background-image: url("../imgs/princesa.png");
 }
 #card11{
+    background-image: url("../imgs/thumb4.png");
+}
+#card12{
+    background-image: url("https://i0.statig.com.br/bancodeimagens/5u/pv/3u/5upv3u1lu7f35x9bmguip2s97.jpg");
+}
+#card13{
+    background-image: url("../imgs/thumb4.png");
+}
+#card14{
+    background-image: url("../imgs/thumb4.png");
+}
+#card15{
+    background-image: url("../imgs/thumb4.png");
+}
+#card16{
+    background-image: url("../imgs/thumb4.png");
+}
+#card17{
+    background-image: url("../imgs/thumb4.png");
+}
+#card18{
+    background-image: url("../imgs/thumb4.png");
+}
+#card19{
+    background-image: url("../imgs/thumb4.png");
+}
+#card20{
+    background-image: url("../imgs/thumb4.png");
+}
+#card21{
     background-image: url("../imgs/thumb4.png");
 }
 .card-side{
@@ -756,7 +787,7 @@ main{
 }
 
 .container-third{
-    width: 90%;
+    width: 100%;
     padding-top:20px;
 }
 .text-third{
