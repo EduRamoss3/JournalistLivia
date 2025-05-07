@@ -102,9 +102,8 @@ main{
 }
 .first-side{
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    width: 100dvw;
-    height: 100%;
 }
 .introducing{
     font-family: 'Schoolbell';
@@ -153,9 +152,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
-    width: 30.0%;
-    margin-right:3px;
 }
 .video-reso{
     display: block;
@@ -222,7 +218,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top:1dvw;
 }
 .list-work{
     display: flex;
@@ -278,6 +273,7 @@ main{
         font-size: 1.5rem;
     }
 }
+
 @media(max-width:1378px){
     
     #interviewer,  #reporterFromCaras{
@@ -291,9 +287,7 @@ main{
         top: 24vh;
         right: 35vw;
     }
-    #vetor{
-       
-    }
+
     #vetor2{
         transform: rotate(70deg);
     }
@@ -334,9 +328,7 @@ main{
         top: 23vh;
         right: 31vw;
     }
-    #vetor{
 
-    }
     #interviewer{
         top:43vh;
         right: 35vw;
@@ -534,11 +526,11 @@ main{
     width: 100%;
 }
 .container-side2{
-
-    height: 100%;
     padding:90px 60px 40px 60px;
-    
     font-weight: 900;
+}
+.events{
+    text-align: start;
 }
 .text-about-side2{
     font-size: 35px;
@@ -558,8 +550,6 @@ main{
 .content-line-2{
     display:flex;
     flex-direction: column;
-    width: 100dvw;
-    height: 59vw;
     padding-left:20px;
     padding-right:20px;
 }
@@ -574,54 +564,46 @@ main{
 .line-third .card-side{
     margin-right:50px;
 }
-#card1,#card2,#card3,#card4,#card5,#card6,#card7,#card8,#card9,#card10,#card11{
+#card1,#card2,#card3,#card4,#card5,#card6,#card7,#card8,#card9,#card10,#card11, #card12,#card13,#card14,#card15,#card15,#card16,#card17,#card18,#card19,#card20,#card21{
     width: 100%;
     height: 100%;
     border-radius:10px;
+    background-size: cover;
 }
+
 #card1{
     background-image: url("../imgs/mamma.png");
-    background-size: cover;
+
 }
 #card2{
     background-image: url("../imgs/lolla.png");
-    background-size: cover;
 }
 #card3{
     background-image: url("../imgs/vila.png");
-    background-size: cover;
 }
 #card4{
     background-image: url("../imgs/thumb1.png");
-    background-size: cover;
 }
 #card5{
     background-image: url("../imgs/friends.png");
-    background-size: cover;
 }
 #card6{
     background-image: url("../imgs/thumb4.png");
-    background-size: cover;
 }
 #card7{
     background-image: url("../imgs/thumb6.png");
-    background-size: cover;
 }
 #card8{
     background-image: url("../imgs/thumb8.png");
-    background-size: cover;
 }
 #card9{
     background-image: url("../imgs/thumb10.png");
-    background-size: cover;
 }
 #card10{
     background-image: url("../imgs/princesa.png");
-    background-size: cover;
 }
 #card11{
     background-image: url("../imgs/thumb4.png");
-    background-size: cover;
 }
 .card-side{
     padding-right: 10px;
@@ -749,9 +731,7 @@ main{
     filter: brightness(1.5);
 
 }
-.text-about-side2{
-    filter: brightness(1.5);
-}
+
 .color-roxo{
     background-image: url(../imgs/Vector.png);
     filter: brightness(1.5);
@@ -801,7 +781,7 @@ main{
     position: absolute;
     width:90px;
     transform:rotate(109deg);
-    right:0vh;
+    right:-30px;
 }
 .fourth-side{
     border-radius:20px;
