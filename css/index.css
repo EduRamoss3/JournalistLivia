@@ -491,7 +491,7 @@ main{
     overflow: hidden;
     width: 100%;
     background-color:#AEBADA;
-    height:40px;
+    height:56px;
  
   }
   
@@ -772,11 +772,9 @@ main{
 }
 #vetorBio{
     position: absolute;
-    right:15px;
-    top:-20px;
+    top: -15px;
     width: 50px;
     filter: brightness(1.8);
-
 }
 
 .color-roxo{
@@ -812,7 +810,7 @@ main{
 .text-third h4, .title-school,.down-container-bio h4{
     font-family: 'Schoolbell';
     color: #AEBADA;
-    font-size: 40px;
+
 }
 .text-sm-center{
     font-family: 'PT Mono';
@@ -1051,7 +1049,7 @@ main{
         font-size: .8rem;
     }
     #vetorBio{
-        width:50px;
+        width:43px;
         
     }
     .content-line-2{
@@ -1068,10 +1066,10 @@ main{
         display:flex;
         flex-direction: column;
         justify-content: center;
-        height: 100%;
+        
     }
     .text-about-side2{
-        font-size: 2rem;
+        font-size: 1rem;
         white-space: wrap;
         padding-bottom: 5px;
         text-align: center;
@@ -1144,6 +1142,23 @@ main{
         height: 75%;
     }
 }
+@media(max-width:613px){
+    #card1,#card2,#card3,#card4,#card5,#card6,#card7,#card8,#card9,#card10,#card11, #card12,#card13,#card14,#card15,#card15,#card16,#card17,#card18,#card19,#card20,#card21{
+        width: 55%;
+        height: 55%;
+        max-width: 358px;
+        min-width: 191px;
+        min-height: 312px;
+        /* height: 100%; */
+        border-radius: 10px;
+        background-size: cover;
+    
+    }
+    .second-side{
+        max-height: 1556px;
+    }
+}
+   
 /*notebook*/
 @media(max-width:1370px){
     .text-about{
