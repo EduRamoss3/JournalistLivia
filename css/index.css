@@ -723,8 +723,11 @@ main{
     width: 100vw;
     height: 100%;
 }
-#carouselSlider, #carouselSlider2{
-    height: 740px;
+.third-side{
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
 }
 #vetorCarousel{
     display: none;
@@ -788,7 +791,8 @@ main{
 /*thirdside*/
 .third-side{
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 86px;
+    
     height: fit-content;
     display: flex;
     justify-content: center;
