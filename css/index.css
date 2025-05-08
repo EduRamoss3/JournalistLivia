@@ -680,6 +680,7 @@ main{
     font-weight: 500;
     font-family: 'Inter';
     text-align: center;
+    padding-top: 10px;
 
 }
 .img-pro{
@@ -1070,7 +1071,7 @@ main{
     }
     .text-about-side2{
         font-size: 1rem;
-        white-space: wrap;
+        white-space: nowrap;
         padding-bottom: 5px;
         text-align: center;
     }
@@ -1143,16 +1144,15 @@ main{
     }
 }
 @media(max-width:613px){
-    #card1,#card2,#card3,#card4,#card5,#card6,#card7,#card8,#card9,#card10,#card11, #card12,#card13,#card14,#card15,#card15,#card16,#card17,#card18,#card19,#card20,#card21{
+    #card1, #card2, #card3, #card4, #card5, #card6, #card7, #card8, #card9, #card10, #card11, #card12, #card13, #card14, #card15, #card15, #card16, #card17, #card18, #card19, #card20, #card21 {
         width: 55%;
         height: 55%;
-        max-width: 358px;
-        min-width: 191px;
-        min-height: 312px;
+        max-width: 380px;
+        min-width: 208px;
+        min-height: 363px;
         /* height: 100%; */
         border-radius: 10px;
         background-size: cover;
-    
     }
     .second-side{
         max-height: 1556px;
