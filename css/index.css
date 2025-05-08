@@ -68,6 +68,8 @@ main{
     display: flex !important;
     justify-content: center !important;
     position: relative;
+    flex-direction: column;
+    align-items: center;
 }
 
 .items-nav .link {
@@ -166,18 +168,20 @@ main{
     font-family: 'Schoolbell';
     color: #AEBADA;
     font-size: 30px;
-    position: absolute;
+    
 
 }
 #reporterFromCaras{
     right: 31vw;
     top: 21vh;
+    position: absolute;
 }
 #interviewer{
     display:flex;
     flex-direction: row;
     right: 33vw;
     top: 40vh;
+    position: absolute;
 }
 #vetor{
     width: 40px;
@@ -466,6 +470,7 @@ main{
     background-size: cover;
     padding:10px;
     border-radius:34px;
+    max-width: 385px;
     width: 75% !important;
   }
   .btn-contact a{
@@ -530,6 +535,7 @@ main{
     border-bottom-right-radius: 24px;
     padding-bottom: 20px;
     width: 100%;
+    max-height: 1761px;
 }
 .container-side2{
     padding:90px 60px 40px 60px;
@@ -539,7 +545,7 @@ main{
     text-align: start;
 }
 .text-about-side2{
-    font-size: 35px;
+    font-size: 45px;
     font-weight: bold;
     font-family: 'Inter';
     margin-top:10px;
@@ -551,7 +557,6 @@ main{
     height: 500px;
     justify-content: center;
     gap: 20px;
-    padding: 20px;
 }
 .content-line-2{
     display:flex;
@@ -565,17 +570,19 @@ main{
     align-items: center;
     width:100%;
     height:100%;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    gap: 20px;
 }
-.line-third .card-side{
-    margin-right:50px;
+.line-third:first-child{
+    margin-bottom: 80px;
 }
 #card1,#card2,#card3,#card4,#card5,#card6,#card7,#card8,#card9,#card10,#card11, #card12,#card13,#card14,#card15,#card15,#card16,#card17,#card18,#card19,#card20,#card21{
-    width: 100%;
+    max-width: 385px;
+    min-width: 256px;
+    min-height: 448px;
     height: 100%;
     border-radius:10px;
     background-size: cover;
+    
 }
 
 #card1{
@@ -643,6 +650,9 @@ main{
     background-image: url("../imgs/thumb4.png");
 }
 .card-side{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     padding-right: 10px;
     height: 435px;
     position: relative;
@@ -688,6 +698,7 @@ main{
 .container-insta{
     padding:10px;
     width:50px;
+    margin: 10px;
     background-color:white;
     height:40px;
     display: flex;
@@ -695,7 +706,6 @@ main{
     align-items: center;
     border-radius:20px;
     position: absolute;
-    top:10px;
 }
 .col{
     background-size:auto;
@@ -731,7 +741,9 @@ main{
     text-align:center;
     align-items: center;
     width:100%;
+    padding:0px;
 }
+
 .down-container-bio{
     display: flex;
         font-family: 'PT Mono';
@@ -800,7 +812,7 @@ main{
 .text-third h4, .title-school,.down-container-bio h4{
     font-family: 'Schoolbell';
     color: #AEBADA;
-    font-size: 30px;
+    font-size: 40px;
 }
 .text-sm-center{
     font-family: 'PT Mono';
@@ -810,13 +822,14 @@ main{
  position: absolute;
  width: 50px;
  left: 20vh;
- top: 20vh;
+ top: 0;
 }
 #vetorFive{
     position: absolute;
     width:90px;
     transform:rotate(109deg);
     right:0px;
+    top:50%;
 }
 .fourth-side{
     border-radius:20px;
@@ -1027,13 +1040,8 @@ main{
         font-size:.9rem;
         white-space: nowrap;
     }
-    #reporterFromCaras2{
-        bottom:-3.5vh;
-        right:30px;
-    }
-    #interviewer2{
-        top:-10px;
-    }
+   
+  
     
     .content-line{
         position: absolute;
@@ -1059,14 +1067,14 @@ main{
     .card-side{
         display:flex;
         flex-direction: column;
-        align-items: center;
-        width: 100vw;
+        justify-content: center;
         height: 100%;
     }
     .text-about-side2{
-        font-size: 1rem;
-        white-space: nowrap;
+        font-size: 2rem;
+        white-space: wrap;
         padding-bottom: 5px;
+        text-align: center;
     }
 
     #ball{
@@ -1114,7 +1122,11 @@ main{
 
 }
 @media (max-width:800px){
+    .linha{
+        width: 100vw;
+    }
     .carousel-inner{
+        padding-bottom:23px;
         padding-right:5px;
         padding-left:13px;
     }
@@ -1123,10 +1135,6 @@ main{
     }
     .text-about{
         font-size:18px !important;
-    }
-    .carousel-item{
-        display: flex;
-        justify-content: center;
     }
     .title{
         font-size:40px !important;
@@ -1139,7 +1147,10 @@ main{
 /*notebook*/
 @media(max-width:1370px){
     .text-about{
-        font-size:30px;
+        font-size:33px;
+    }
+    .text-about2{
+        font-size:45px;
     }
     .title-works{
         font-size:18px;
