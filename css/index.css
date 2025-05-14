@@ -17,6 +17,104 @@
     font-family: 'PT Mono';
     src: url(../fonts/PTMono-Regular.ttf);
 }
+/*reports and events*/
+#card-report1{
+    background-image: url("../imgs/mamma.png");
+
+}
+#card-report2{
+    background-image: url("../imgs/lolla.png");
+}
+#card-report3{
+    background-image: url("../imgs/vila.png");
+}
+#card-report4{
+    background-image: url("../imgs/thumb1.png");
+}
+#card-report5{
+    background-image: url("../imgs/friends.png");
+}
+#card-report6{
+    background-image: url("../imgs/thumb4.png");
+}
+#card-report7{
+    background-image: url("../imgs/thumb6.png");
+}
+#card-report8{
+    background-image: url("../imgs/thumb8.png");
+}
+#card-report9{
+    background-image: url("../imgs/thumb10.png");
+}
+#card-report10{
+    background-image: url("../imgs/princesa.png");
+}
+#card-report11{
+    background-image: url("../imgs/thumb4.png");
+}
+/*film critcs*/
+#card-film1{
+    background-image: url("../imgs/thumb2.png");
+
+}
+#card-film2{
+    background-image: url("../imgs/filmcritics/coringa.png");
+}
+#card-film3{
+    background-image: url("../imgs/filmcritics/melhores.png");
+}
+#card-film4{
+    background-image: url("../imgs/filmcritics/beetlejuice.png");
+}
+#card-film5{
+    background-image: url("../imgs/filmcritics/emilia.png");
+}
+#card-film6{
+    background-image: url("../imgs/filmcritics/oscars.png");
+}
+#card-film7{
+    background-image: url("../imgs/filmcritics/redone.png");
+}
+#card-film8{
+    background-image: url("../imgs/thumb5.png");
+}
+
+/*interviews*/
+#card-interviews1{
+    background-image: url("../imgs/mamma.png");
+
+}
+#card-interviews2{
+    background-image: url("../imgs/lolla.png");
+}
+#card-interviews3{
+    background-image: url("../imgs/vila.png");
+}
+#card-interviews4{
+    background-image: url("../imgs/thumb1.png");
+}
+#card-interviews5{
+    background-image: url("../imgs/friends.png");
+}
+#card-interviews6{
+    background-image: url("../imgs/thumb4.png");
+}
+#card-interviews7{
+    background-image: url("../imgs/thumb6.png");
+}
+#card-interviews8{
+    background-image: url("../imgs/thumb8.png");
+}
+#card-interviews9{
+    background-image: url("../imgs/thumb10.png");
+}
+#card-interviews10{
+    background-image: url("../imgs/princesa.png");
+}
+#card-interviews11{
+    background-image: url("../imgs/thumb4.png");
+}
+
 #vetorHideVideo, #vetorHideVideo2, #vetorHideVideo3
 {
     display: none;
@@ -575,80 +673,16 @@ main{
 .line-third:first-child{
     margin-bottom: 80px;
 }
-#card1,#card2,#card3,#card4,#card5,#card6,#card7,#card8,#card9,#card10,#card11, #card12,#card13,#card14,#card15,#card15,#card16,#card17,#card18,#card19,#card20,#card21{
-    max-width: 385px;
+.card-template{
+ max-width: 385px;
     min-width: 256px;
     min-height: 448px;
     height: 100%;
     border-radius:10px;
     background-size: cover;
-    
 }
 
-#card1{
-    background-image: url("../imgs/mamma.png");
 
-}
-#card2{
-    background-image: url("../imgs/lolla.png");
-}
-#card3{
-    background-image: url("../imgs/vila.png");
-}
-#card4{
-    background-image: url("../imgs/thumb1.png");
-}
-#card5{
-    background-image: url("../imgs/friends.png");
-}
-#card6{
-    background-image: url("../imgs/thumb4.png");
-}
-#card7{
-    background-image: url("../imgs/thumb6.png");
-}
-#card8{
-    background-image: url("../imgs/thumb8.png");
-}
-#card9{
-    background-image: url("../imgs/thumb10.png");
-}
-#card10{
-    background-image: url("../imgs/princesa.png");
-}
-#card11{
-    background-image: url("../imgs/thumb4.png");
-}
-#card12{
-    background-image: url("https://i0.statig.com.br/bancodeimagens/5u/pv/3u/5upv3u1lu7f35x9bmguip2s97.jpg");
-}
-#card13{
-    background-image: url("../imgs/thumb4.png");
-}
-#card14{
-    background-image: url("../imgs/thumb4.png");
-}
-#card15{
-    background-image: url("../imgs/thumb4.png");
-}
-#card16{
-    background-image: url("../imgs/thumb4.png");
-}
-#card17{
-    background-image: url("../imgs/thumb4.png");
-}
-#card18{
-    background-image: url("../imgs/thumb4.png");
-}
-#card19{
-    background-image: url("../imgs/thumb4.png");
-}
-#card20{
-    background-image: url("../imgs/thumb4.png");
-}
-#card21{
-    background-image: url("../imgs/thumb4.png");
-}
 .card-side{
     display: flex;
     align-items: center;
@@ -692,7 +726,7 @@ main{
     background-size: auto;
     width:100%;
 }
-#carouselSlider ,#carouselSlider2{
+#carouselSlider ,#carouselSlider2, #carouselSliderReports{
     display: none;
 }
 
@@ -767,7 +801,7 @@ main{
 .text-down-container{
     position: relative;
     text-align: justify;
-    margin:10;
+    margin:10px;
 }
 .text-down-container p{
     text-indent: 20px;
@@ -999,10 +1033,13 @@ main{
 
 /*mobile*/
 @media(max-width:1075px){
+    #carouselReports{
+        display: none;
+    }
     .items-nav{
         width: 100%;
     }
-    #carouselReports{
+    #carouselReportsFilm{
         display: none;
     }
 
@@ -1057,7 +1094,7 @@ main{
     .content-line-2{
         display: none;
     }
-    #carouselSlider, #carouselSlider2{
+    #carouselSlider, #carouselSlider2, #carouselSliderReports{
         display: flex;
     }
     .container-side2{
@@ -1133,6 +1170,8 @@ main{
     }
     .third-side{
         padding-bottom: 0px;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
     }
     .carousel-inner{
         padding-right:5px;
@@ -1145,13 +1184,13 @@ main{
     .title{
         font-size:40px !important;
     }
-    #card1,#card2,#card3,#card4,#card5,#card6,#card7,#card8,#card9,#card10,#card11, #card12,#card13,#card14,#card15,#card15,#card16,#card17,#card18,#card19,#card20,#card21{
+    .card-template{
         width: 75%;
         height: 75%;
     }
 }
 @media(max-width:613px){
-    #card1, #card2, #card3, #card4, #card5, #card6, #card7, #card8, #card9, #card10, #card11, #card12, #card13, #card14, #card15, #card15, #card16, #card17, #card18, #card19, #card20, #card21 {
+     .card-template{
         width: 55%;
         height: 55%;
         max-width: 380px;
