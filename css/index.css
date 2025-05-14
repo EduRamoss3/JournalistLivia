@@ -759,7 +759,7 @@ main{
         white-space: break-spaces;
         width: 100%;
         position: relative;
-        padding: 10px;
+        padding-top: 10px;
 }
 .down-container-bio h4{
     position: relative;
@@ -767,7 +767,7 @@ main{
 .text-down-container{
     position: relative;
     text-align: justify;
-    word-break: pre;
+    margin:0;
 }
 .text-down-container p{
     text-indent: 20px;
@@ -792,7 +792,6 @@ main{
 .third-side{
     position: relative;
     padding-bottom: 86px;
-    
     height: fit-content;
     display: flex;
     justify-content: center;
@@ -871,7 +870,6 @@ main{
   justify-content: space-evenly;
   align-items: start;
   height: max-content;
-  margin-top:-10px;
   padding:0;
 }
 .list-content li{
@@ -1133,13 +1131,14 @@ main{
     .linha{
         width: 100vw;
     }
+    .third-side{
+        padding-bottom: 0px;
+    }
     .carousel-inner{
         padding-right:5px;
         padding-left:13px;
     }
-    .container-side2{
-        width:90%;
-    }
+
     .text-about{
         font-size:18px !important;
     }
