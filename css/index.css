@@ -727,7 +727,7 @@ main{
     background-size: auto;
     width:100%;
 }
-#carouselSlider ,#carouselSlider2, #carouselSliderReports{
+#carouselSlider ,#carouselSlider2, #carouselSliderReports,#carouselTvSlider{
     display: none;
 }
 
@@ -1094,7 +1094,7 @@ main{
     .content-line-2{
         display: none;
     }
-    #carouselSlider, #carouselSlider2, #carouselSliderReports{
+    #carouselSlider, #carouselSlider2, #carouselSliderReports, #carouselTvSlider{
         display: flex;
     }
     .container-side2{
