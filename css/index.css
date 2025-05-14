@@ -81,32 +81,32 @@
 
 /*interviews*/
 #card-interviews1{
-    background-image: url("../imgs/mamma.png");
+    background-image: url("../imgs/interviews/citadel.png");
 
 }
 #card-interviews2{
-    background-image: url("../imgs/lolla.png");
+    background-image: url("../imgs/interviews/stanley.png");
 }
 #card-interviews3{
-    background-image: url("../imgs/vila.png");
+    background-image: url("../imgs/interviews/vincent.png");
 }
 #card-interviews4{
-    background-image: url("../imgs/thumb1.png");
+    background-image: url("../imgs/interviews/shaunsipos.png");
 }
 #card-interviews5{
-    background-image: url("../imgs/friends.png");
+    background-image: url("../imgs/interviews/wheeltime.png");
 }
 #card-interviews6{
-    background-image: url("../imgs/thumb4.png");
+    background-image: url("../imgs/interviews/holger.png");
 }
 #card-interviews7{
-    background-image: url("../imgs/thumb6.png");
+    background-image: url("../imgs/interviews/fellow.png");
 }
 #card-interviews8{
-    background-image: url("../imgs/thumb8.png");
+    background-image: url("../imgs/interviews/lamar.png");
 }
 #card-interviews9{
-    background-image: url("../imgs/thumb10.png");
+    background-image: url("../imgs/interviews/tibia.png");
 }
 #card-interviews10{
     background-image: url("../imgs/princesa.png");
@@ -305,13 +305,7 @@ main{
     margin-left:2px;
     margin-bottom: 9px;
 }
-.carousel-control-prev-icon {
- background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
 
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
 /*WORKS*/
 .title-works{
     font-size: 24px;
@@ -741,7 +735,6 @@ main{
     padding:10px;
     width:50px;
     margin: 10px;
-    background-color:white;
     height:40px;
     display: flex;
     justify-content: center;
