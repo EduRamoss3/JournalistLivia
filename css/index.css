@@ -130,7 +130,7 @@ main{
     
 }
 .nav-link{
-    color:#FFFFFF8C !important;
+    color:#0000008c !important;
 }
 
 body {
@@ -608,6 +608,10 @@ main{
     font-size: .8rem;
     white-space: nowrap;
     margin:0;
+    color: #0000008c;
+}
+.textline span a {
+      color: #0000008c;
 }
 
 /*/SECOND SIDE */
@@ -715,7 +719,7 @@ main{
     background-size: auto;
     width:100%;
 }
-#carouselSlider ,#carouselSlider2, #carouselSliderReports,#carouselTvSlider{
+#carouselSlider ,#carouselSlider2, #carouselSliderReports,#carouselTvSlider, #carouselWebserieSlider{
     display: none;
 }
 
@@ -1079,7 +1083,7 @@ main{
     .content-line-2{
         display: none;
     }
-    #carouselSlider, #carouselSlider2, #carouselSliderReports, #carouselTvSlider{
+    #carouselSlider, #carouselSlider2, #carouselSliderReports, #carouselTvSlider, #carouselWebserieSlider{
         display: flex;
     }
     .container-side2{
