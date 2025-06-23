@@ -616,7 +616,7 @@ main{
     margin:0;
 }
 .textline a{
-    color:black;
+    color:inherit;
 }
 
 /*/SECOND SIDE */
