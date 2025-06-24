@@ -243,7 +243,6 @@ main{
     margin-top:10px;
 }
 .btn-contact{
-    width: 131px;
     padding-top: 5px !important;
     padding-bottom: 5px !important;
     border: 0px transparent;
@@ -254,6 +253,7 @@ main{
     font-size: .8rem;
     font-family: 'Inter' !important;
     font-weight: bolder;
+    white-space: nowrap;
 }
 .btn-container{
     display: flex;
@@ -816,6 +816,7 @@ main{
 .down-container-bio h4{
     position: relative;
 }
+
 .text-down-container{
     position: relative;
     text-align: justify;
@@ -824,6 +825,7 @@ main{
     font-size:1.1rem;
     padding:10px;
     margin-bottom:10px;
+    letter-spacing: -0.3px;
 }
 .text-down-container p{
     text-indent: 20px;
@@ -1054,6 +1056,9 @@ main{
 
 /*mobile*/
 @media(max-width:1075px){
+    .text-down-container{
+        font-size:0.85rem;
+    }
     #carouselReports{
         display: none;
     }
@@ -1165,6 +1170,7 @@ main{
     .list-content li{
         text-align: start;
         padding:5px;
+        font-size:0.85rem;
     }
     .fourth-side{
         margin: 0px;
@@ -1182,6 +1188,9 @@ main{
 @media (max-width:800px){
     .linha{
         width: 100vw;
+    }
+    .down-text{
+        font-size:0.85rem;
     }
     .third-side{
         padding-bottom: 0px;
