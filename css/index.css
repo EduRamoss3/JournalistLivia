@@ -30,8 +30,20 @@
     src: url(../fonts/brillant.otf);
 }
 @font-face{
-    font-family: 'Olivera';
-    src: url(../fonts/Olivera_Demo.ttf);
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat.ttf);
+}
+@font-face{
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway.ttf);
+}
+@font-face{
+    font-family: 'Dosis';
+    src: url(../fonts/Dosis.ttf);
+}
+@font-face{
+    font-family: 'Fredoka';
+    src: url(../fonts/Fredoka.ttf);
 }
 main{
     margin-top: 60px;
@@ -142,7 +154,7 @@ main{
 
 .nav-item{
     margin-right: 40px;
-    font-family: sans-serif;
+    font-family: 'Raleway';
     font-weight: bold;
     
 }
@@ -236,7 +248,7 @@ main{
     padding-bottom: 5px !important;
     border: 0px transparent;
     background-color: #AEBADA !important;
-    font-family: 'Inter';
+    font-family: 'Raleway' !important;
 }
 .btn-contact a{
     font-size: .8rem;
@@ -331,7 +343,7 @@ main{
 .list-work{
     display: flex;
     width: fit-content;
-    font-family: 'Inter';
+    font-family: 'Fredoka';
     padding-bottom: 10px;
     align-items: center;
     list-style: none;
@@ -407,7 +419,7 @@ main{
         transform: rotate(70deg);
     }
     .list-work p{
-        font-size:0.7rem;
+        font-size:0.75rem;
     }
     .container-works{
         justify-content: flex-start;
@@ -614,7 +626,7 @@ main{
     }
   }
 .textline{
-    font-family:'Inter';
+    font-family:'Raleway';
     letter-spacing: 1px;
     font-weight: 500;
     text-align: center;
@@ -649,9 +661,9 @@ main{
     text-align: start;
 }
 .text-about-side2, .title-school{
-    font-size: 28px;
+    font-size: 45px;
     font-weight: bold;
-    font-family: 'Inter';
+    font-family:'AlteHaasGroteskBold';
     text-align: center;
 }
 .content-line {
@@ -716,8 +728,8 @@ main{
     display: flex;
 }
 .down-text{
-    font-weight: 200;
-    font-family: 'Inter';
+    font-weight: 500;
+    font-family: 'Fredoka';
     text-align: center;
     padding-top: 10px;
 
@@ -794,7 +806,7 @@ main{
         font-weight: 200;
         flex-direction: column;
         justify-content: center;
-        text-align: center;
+        text-align: left !important;
         align-items: center;
         white-space: break-spaces;
         width: 100%;
@@ -807,7 +819,11 @@ main{
 .text-down-container{
     position: relative;
     text-align: justify;
-    margin:10px;
+    font-family: 'Fredoka';
+    font-weight: normal;
+    font-size:1.1rem;
+    padding:10px;
+    margin-bottom:10px;
 }
 .text-down-container p{
     text-indent: 20px;
@@ -913,8 +929,8 @@ main{
 }
 .list-content li{
     display: flex;
-    font-family: 'PT Mono';
-    font-weight: 200;
+    font-family: 'Fredoka';
+    font-weight: 600;
     flex-direction: row;
     justify-content: start;
     text-align:center;
@@ -1021,7 +1037,7 @@ main{
 }
 
 .information{
-    font-family: 'Inter';
+    font-family: 'Montserrat';
     font-weight: 100;
     font-size:.6rem;
     color:gray;
@@ -1090,7 +1106,7 @@ main{
         font-size: .8rem;
     }
     #vetorBio{
-        width:33px;
+        width:40px;
         
     }
     .content-line-2{
@@ -1110,14 +1126,13 @@ main{
         
     }
     .text-about-side2{
-        font-size:larger;
-        white-space: nowrap;
+        font-size:24px;
         padding-bottom: 0px;
         text-align: center;
-        margin: 0;
+        margin-bottom: 24px;
     }
     .title-school{
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         margin:0;
     }
     #ball{
