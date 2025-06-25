@@ -154,9 +154,9 @@ main{
 
 .nav-item{
     margin-right: 40px;
-    font-family: 'Raleway';
-    font-weight: bold;
-    transition: ease-out 0.1s;
+    font-family: 'Fredoka';
+    font-weight: normal;
+    transition: ease-in 0.6s;
     
 }
 .nav-item:hover{
@@ -229,6 +229,7 @@ main{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    margin-top:-5px;
 }
 .introducing{
     font-weight: 600;
@@ -248,16 +249,16 @@ main{
     margin-top:10px;
 }
 .btn-contact{
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
+    padding: 15px 30px 15px 30px;
+    border-radius:50px;
     border: 0px transparent;
     background-color: #AEBADA !important;
-    font-family: 'Raleway' !important;
+    font-family: 'Fredoka' !important;
+    transition: ease-in .1s;
 }
 .btn-contact a{
     font-size: .8rem;
-    font-family: 'Inter' !important;
-    font-weight: bolder;
+    font-weight: normal;
     white-space: nowrap;
 }
 .btn-container{
@@ -267,8 +268,9 @@ main{
     height: 100px;
     padding-bottom: 20px;
 }
-.btn:hover{
-    background-color: #5977a5 !important;
+.btn-contact:hover{
+    transform: scale(1.01);
+    background-color: #b2c5e0 !important;
 }
 /*RIGHT*/
 .section-video{
@@ -332,7 +334,8 @@ main{
 /*WORKS*/
 .title-works{
     font-size: 24px;
-    font-family: 'Inter';
+    font-family: 'AlteHaasGroteskBold';
+    font-weight: bolder;
 }
 #vetor2{
   width: 40px; 
@@ -653,7 +656,7 @@ main{
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     padding-top:10px;
     max-height: 1761px;
     
