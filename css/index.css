@@ -156,7 +156,12 @@ main{
     margin-right: 40px;
     font-family: 'Raleway';
     font-weight: bold;
+    transition: ease-out 0.1s;
     
+}
+.nav-item:hover{
+
+    transform: scale(1.1);
 }
 .nav-link{
     color:black !important;
@@ -806,8 +811,7 @@ main{
         font-weight: 200;
         flex-direction: column;
         justify-content: center;
-        text-align: left !important;
-        align-items: center;
+        text-align: justify !important;
         white-space: break-spaces;
         width: 100%;
         position: relative;
@@ -1111,7 +1115,7 @@ main{
         font-size: .8rem;
     }
     #vetorBio{
-        width:40px;
+        width:34px;
         
     }
     .content-line-2{
@@ -1137,7 +1141,7 @@ main{
         margin-bottom: 24px;
     }
     .title-school{
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         margin:0;
     }
     #ball{
