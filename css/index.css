@@ -651,13 +651,12 @@ main{
 /*/SECOND SIDE */
 .second-side{
     display: flex;
-    background-color: #E3E6F5;
+    background-color: #AEBADA;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-bottom: 20px;
-    padding-top:10px;
+    padding:10px;
     max-height: 1761px;
     
 }
@@ -795,7 +794,7 @@ main{
 }
 /*downcontainer*/
 .down-container,.down-container-bio{
-    font-family: 'Inter';
+    font-family: 'Fredoka';
     font-size: 1rem !important;
 }
 .down-container{
@@ -809,30 +808,32 @@ main{
     padding:0px;
 }
 
-.down-container-bio{
+.down-container-bio {
+    font-family: 'Fredoka';
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
     display: flex;
-        font-weight: 200;
-        flex-direction: column;
-        justify-content: center;
-        text-align: justify !important;
-        white-space: break-spaces;
-        width: 100%;
-        position: relative;
-        padding-top: 10px;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 12px;
+    background-color: #fdfdfd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 .down-container-bio h4{
     position: relative;
 }
 
-.text-down-container{
-    position: relative;
-    text-align: justify;
+.text-down-container {
     font-family: 'Fredoka';
-    font-weight: normal;
-    font-size:1.1rem;
-    padding:10px;
-    margin-bottom:0px;
-    letter-spacing: -0.3px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6; /* Espaçamento entre linhas melhorado */
+    color: #1a1a1a;
+    text-align: justify;
+    margin-bottom: 12px;
+    text-indent: 1.5em;
+    letter-spacing: 0;
 }
 .text-down-container p{
     text-indent: 20px;
@@ -1141,7 +1142,6 @@ main{
         font-size:24px;
         padding-bottom: 0px;
         text-align: center;
-        margin-bottom: 24px;
     }
     .title-school{
         font-size: 1.3rem;
