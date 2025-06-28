@@ -156,7 +156,7 @@ main{
     margin-right: 40px;
     font-family: 'Fredoka';
     font-weight: normal;
-    transition: ease-in 0.6s;
+    transition: ease .2s;
     
 }
 .nav-item:hover{
@@ -634,7 +634,7 @@ main{
     }
   }
 .textline{
-    font-family:'Fredoka';
+    font-family:'Raleway';
     letter-spacing: 1px;
     font-weight: 500;
     text-align: center;
@@ -878,7 +878,7 @@ main{
 }
 .text-third h4, .title-school,.down-container-bio h4{
     font-family: 'Schoolbell';
-    color: #AEBADA;
+    color: #cad8e9;
 
 }
 .text-sm-center{
@@ -906,7 +906,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #E3E6F5;
+    background-color: #DEE7F2;
 }
 .container-four{
     padding-top: 20px;
