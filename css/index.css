@@ -669,9 +669,11 @@ main{
 }
 .text-about-side2, .title-school{
     font-size: 45px;
-    font-weight: bold;
     font-family:'AlteHaasGroteskBold';
     text-align: center;
+}
+.text-about-side2{
+    font-weight: 500 !important;
 }
 .content-line {
     display: flex;
@@ -916,6 +918,7 @@ main{
     text-align: center;
     letter-spacing: 2px;
     position: relative;
+    font-weight: bold;
 }
 #vetorFourth{
     position: absolute;
