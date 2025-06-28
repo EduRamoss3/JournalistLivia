@@ -252,7 +252,7 @@ main{
     padding: 15px 30px 15px 30px;
     border-radius:50px;
     border: 0px transparent;
-    background-color: #AEBADA !important;
+    background-color: #DEE7F2	 !important;
     font-family: 'Fredoka' !important;
     transition: ease-in .1s;
 }
@@ -612,7 +612,7 @@ main{
     align-items: center;
     overflow: hidden;
     width: 100%;
-    background-color:#AEBADA;
+    background-color:#F3F6FA;
     height:56px;
  
   }
@@ -634,11 +634,11 @@ main{
     }
   }
 .textline{
-    font-family:'Raleway';
+    font-family:'Fredoka';
     letter-spacing: 1px;
     font-weight: 500;
     text-align: center;
-    font-weight: bolder;
+    font-weight: bold;
     text-transform: uppercase;
     font-size: 19px;
     white-space: nowrap;
