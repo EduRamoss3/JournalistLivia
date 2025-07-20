@@ -4,7 +4,7 @@ let startX = 0;
 let endX = 0;
 let interval = 3200;
 let direction = 1;
-let max = 600;
+let max = 560;
 slider.addEventListener('touchstart',(e) => {
     startX = e.touches[0].clientX;
 });
@@ -36,7 +36,7 @@ slider.addEventListener('touchend', (e) => {
 })
 
 function carousel() {
-    intervalMund += 200 * direction;
+    intervalMund += 180 * direction;
 
     if (intervalMund >= max) 
     {
