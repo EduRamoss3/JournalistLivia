@@ -67,6 +67,14 @@ main{
     height: 285px;
     margin: 6px;
 }
+.item-mobile-slick{
+    width: 170px;
+    height: 325px;
+    margin:6px;
+}
+#carouselSlider2{
+    padding-bottom: 60px;
+}
 /*reports and events*/
 #card-report1{
     background-image: url("../imgs/mamma.png");
@@ -833,7 +841,7 @@ main{
     font-family: 'Fredoka';
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
