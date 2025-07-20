@@ -71,9 +71,14 @@ main{
     width: 170px;
     height: 325px;
     margin:8px;
+    flex: 0 0 auto; /* Impede que o item estique */
 }
-#carouselSlider2{
-    padding-bottom: 75px;
+
+#carouselSlider2 {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-bottom: 75px;
 }
 /*reports and events*/
 #card-report1{
@@ -648,18 +653,18 @@ main{
     display: inline-flex;
     align-items: center;
     white-space: nowrap;
-    animation: scroll-left 60s linear infinite;
     will-change: transform;
-  }
+    animation: scroll-left 30s;
+   }
   
-  @keyframes scroll-left {
+@keyframes scroll-left {
     0% {
       transform: translateX(100%);
     }
     100% {
       transform: translateX(-100%);
     }
-  }
+}
 .textline{
     font-family:'AlteHaasGroteskBold';
     letter-spacing: 1px;

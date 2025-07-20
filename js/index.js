@@ -5,6 +5,9 @@ let endX = 0;
 let interval = 3200;
 let direction = 1;
 let max = 560;
+let ads = document.getElementById("ads");
+let indexLine = 0;
+let directionLine = 1;
 slider.addEventListener('touchstart',(e) => {
     startX = e.touches[0].clientX;
 });
@@ -52,4 +55,13 @@ function carousel() {
     slider.style.transform = `translate3d(${intervalMund}px, 0px, 0px)`;
     slider.style.transition = 'transform 300ms';
 }
+
+function animeAds()
+{
+    let valuePx = 2090 * directionLine;
+    directionLine = directionLine * -1;
+    ads.style.transform =  `translateX(${valuePx}px)`;
+
+}
+
 setInterval(carousel, interval);
