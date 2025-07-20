@@ -79,6 +79,7 @@ main{
   overflow: hidden;
   white-space: nowrap;
   padding-bottom: 75px;
+  touch-action: pan-y; /* Permite só scroll vertical */
 }
 /*reports and events*/
 #card-report1{
