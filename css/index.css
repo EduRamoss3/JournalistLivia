@@ -70,7 +70,7 @@ main{
 .item-mobile-slick{
     width: 170px;
     height: 325px;
-    margin:6px;
+    margin:0 10px 0 10px;
 }
 #carouselSlider2{
     padding-bottom: 60px;
