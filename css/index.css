@@ -77,9 +77,18 @@ main{
 #carouselSlider2 {
   display: flex;
   overflow: hidden;
-  white-space: nowrap;
+  position: relative;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
   padding-bottom: 75px;
-  touch-action: pan-y; /* Permite só scroll vertical */
+}
+
+.slider {
+  display: flex;
+  will-change: transform;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
 }
 /*reports and events*/
 #card-report1{

@@ -33,7 +33,7 @@ slider.addEventListener('touchend', (e) => {
         if (intervalMund >= max) intervalMund = max;
         if (intervalMund < -max) intervalMund = -max;
 
-        slider.style.transform = `translate3d(${intervalMund}px, 0px, 0px)`;
+        slider.style.transform = `translateX(${intervalMund}px)`;
         slider.style.transition = 'transform 300ms';
     }
 })
@@ -52,7 +52,7 @@ function carousel() {
         direction = 1;
     }
 
-    slider.style.transform = `translate3d(${intervalMund}px, 0px, 0px)`;
+    slider.style.transform = `translateX(${intervalMund}px)`;
     slider.style.transition = 'transform 300ms';
 }
 
