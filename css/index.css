@@ -73,7 +73,12 @@ main{
     margin:8px;
     flex: 0 0 auto; /* Impede que o item estique */
 }
-
+@media(min-width:800px){
+   .item-mobile-slick{
+    width: 390px;
+    height: 530px;
+  } 
+}
 #carouselWrapper {
   width: 100vw !important;
   overflow: hidden;
@@ -85,14 +90,10 @@ main{
   width: max-content; /* importante: permite o conteúdo crescer com os filhos */
   transition: transform 0.3s ease;
   will-change: transform;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 }
 
-.item-mobile-slick {
-  flex: 0 0 182px; /* cada item ocupa toda a largura da tela */
-  box-sizing:content-box;
-  padding: 10px;
-}
+
 /*reports and events*/
 #card-report1{
     background-image: url("../imgs/mamma.png");
@@ -792,6 +793,7 @@ main{
     font-family: 'Fredoka';
     text-align: center;
     padding-top: 10px;
+    font-size:22px;
 
 }
 .img-pro{
@@ -803,7 +805,7 @@ main{
     background-size: auto;
     width:100%;
 }
-#carouselSlider ,#carouselSlider2, #carouselSliderReports,#carouselTvSlider, #carouselWebserieSlider{
+#carouselSlider, #carouselSliderReports,#carouselTvSlider, #carouselWebserieSlider{
     display: none;
 }
 

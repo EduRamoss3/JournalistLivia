@@ -57,12 +57,5 @@ function carousel() {
     slider.style.transition = 'transform 300ms';
 }
 
-function animeAds()
-{
-    let valuePx = 2090 * directionLine;
-    directionLine = directionLine * -1;
-    ads.style.transform =  `translateX(${valuePx}px)`;
-
-}
 
 setInterval(carousel, interval);
