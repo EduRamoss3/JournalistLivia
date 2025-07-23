@@ -74,21 +74,24 @@ main{
     flex: 0 0 auto; /* Impede que o item estique */
 }
 
-#carouselSlider2 {
-  display: flex;
+#carouselWrapper {
+  width: 100vw !important;
   overflow: hidden;
   position: relative;
-  will-change: transform;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform-style: preserve-3d;
-  padding-bottom: 75px;
 }
 
-.slider {
+#carouselSlider2 {
   display: flex;
+  width: max-content; /* importante: permite o conteúdo crescer com os filhos */
+  transition: transform 0.3s ease;
   will-change: transform;
-  -webkit-transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
+  padding-bottom: 50px;
+}
+
+.item-mobile-slick {
+  flex: 0 0 182px; /* cada item ocupa toda a largura da tela */
+  box-sizing:content-box;
+  padding: 10px;
 }
 /*reports and events*/
 #card-report1{
@@ -209,11 +212,16 @@ main{
     color:black !important;
 }
 
+html{
+    overflow-x: clip;
+}
+
 body {
     font-family: 'Forum';
-    overflow-x: hidden;
+    overflow-x: clip;
     background-color: #F0F2FB;
     width: 100%;
+    overscroll-behavior-x: contain;
     min-height: 100vh;
 }
 main{

@@ -4,7 +4,8 @@ let startX = 0;
 let endX = 0;
 let interval = 3200;
 let direction = 1;
-let max = 560;
+let max = 1100;
+let min= 0;
 let ads = document.getElementById("ads");
 let indexLine = 0;
 let directionLine = 1;
@@ -30,7 +31,7 @@ slider.addEventListener('touchend', (e) => {
         }
 
         // Limita dentro dos valores permitidos
-        if (intervalMund >= max) intervalMund = max;
+        if (intervalMund >= min) intervalMund = min;
         if (intervalMund < -max) intervalMund = -max;
 
         slider.style.transform = `translateX(${intervalMund}px)`;
@@ -39,11 +40,11 @@ slider.addEventListener('touchend', (e) => {
 })
 
 function carousel() {
-    intervalMund += 180 * direction;
+    intervalMund += 200 * direction;
 
-    if (intervalMund >= max) 
+    if (intervalMund >= min) 
     {
-        intervalMund = max;
+        intervalMund = min;
         direction = -1;
     }
     if(intervalMund <= -max)
