@@ -213,7 +213,8 @@ main{
 }
 
 html{
-    overflow-x: clip;
+    overflow-x: hidden;
+    width: 100vw !important;
 }
 
 body {
