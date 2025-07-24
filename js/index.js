@@ -9,6 +9,8 @@ let min= 0;
 let ads = document.getElementById("ads");
 let indexLine = 0;
 let directionLine = 1;
+
+// Bloqueando bugs - -preventivo iphone
 slider.addEventListener('touchstart',(e) => {
     startX = e.touches[0].clientX;
 });
@@ -25,8 +27,12 @@ document.addEventListener('touchmove', function (e) {
     e.preventDefault(); // bloqueia o swipe lateral
   }
 }, { passive: false });
+// Fim Bloqueando bugs - -preventivo iphone
 
+
+// CarouselSlider2 arrastar
 slider.addEventListener('touchend', (e) => {
+  interval = 0;
      endX = e.changedTouches[0].clientX;
 
      const diffX = endX - startX;
@@ -35,11 +41,11 @@ slider.addEventListener('touchend', (e) => {
         if (diffX < 0) {
             // arrastou para a esquerda
             direction = -1;
-            intervalMund -= 200;
+            intervalMund -= 400;
         } else {
             // arrastou para a direita
             direction = 1;
-            intervalMund += 200;
+            intervalMund += 400;
         }
 
         // Limita dentro dos valores permitidos
@@ -48,6 +54,7 @@ slider.addEventListener('touchend', (e) => {
 
         slider.style.transform = `translateX(${intervalMund}px)`;
         slider.style.transition = 'transform 300ms';
+        interval = 3200;
     }
 })
 
