@@ -12,7 +12,11 @@ let directionLine = 1;
 slider.addEventListener('touchstart',(e) => {
     startX = e.touches[0].clientX;
 });
-
+document.getElementById('html').addEventListener('touchmove', function (e) {
+  if (Math.abs(e.touches[0].clientX - startX) > 10) {
+    e.preventDefault(); 
+  }
+}, { passive: false });
 
 slider.addEventListener('touchend', (e) => {
      endX = e.changedTouches[0].clientX;
