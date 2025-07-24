@@ -221,15 +221,20 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overscroll-behavior-x: contain;
+    position: relative;
+      touch-action: pan-y; /* importante! bloqueia scroll horizontal no iOS */
+
 }
 
 body {
     font-family: 'Forum';
     overflow-x: clip;
     background-color: #F0F2FB;
-    width: 100%;
+    width: 100vw;
     overscroll-behavior-x: contain;
     min-height: 100vh;
+     position: relative;
 }
 main{
     height: 100vh;
