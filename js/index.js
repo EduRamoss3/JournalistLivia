@@ -12,9 +12,17 @@ let directionLine = 1;
 slider.addEventListener('touchstart',(e) => {
     startX = e.touches[0].clientX;
 });
-document.getElementById('html').addEventListener('touchmove', function (e) {
-  if (Math.abs(e.touches[0].clientX - startX) > 10) {
-    e.preventDefault(); 
+let startV = 0;
+
+document.addEventListener('touchstart', function (e) {
+  startV = e.touches[0].clientX;
+}, { passive: true });
+
+
+document.addEventListener('touchmove', function (e) {
+  let diffX = e.touches[0].clientX - startV;
+  if (Math.abs(diffX) > 10) {
+    e.preventDefault(); // bloqueia o swipe lateral
   }
 }, { passive: false });
 
