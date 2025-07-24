@@ -705,11 +705,14 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    position: relative;
+    width: 100dvw !important;
+    min-width: 100dvw;
+    max-width: 100dvw;
     padding:10px;
     max-height: 1761px;
     border-radius: 24px;
-    
+    overflow:hidden;  
 }
 .container-side2{
     padding:10px 60px 40px 60px;
